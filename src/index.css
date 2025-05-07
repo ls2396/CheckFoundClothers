@@ -1,0 +1,139 @@
+/* #common
+================================================== */
+@import url(ress.css);
+:root {
+    --mainColor: #0000FF;
+    --bgColor: #F3F3F3;
+    --lineColor: rgba(0, 0, 0, 0.2);
+}
+li {
+    list-style: none;
+}
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+body {
+    font-family: 'Ranchers', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bgColor);
+}
+.top,
+.banner,
+.mission,
+.list,
+.footer {
+    width: calc(100% - 16px);
+}
+h1,
+h2,
+h3,
+p {
+    color: var(--mainColor);
+}
+.top,
+.list {
+    border-bottom: solid 0.5px var(--lineColor);
+}
+.list p {
+    font-family: 'Ranchers';
+}
+.list_bstd p {
+    writing-mode: vertical-rl;
+}
+
+
+/* #others
+================================================== */
+@media screen and (min-width:1020px) {
+    .top,
+    .banner,
+    .mission,
+    .list {
+        margin-bottom: 2.4vw;
+    }
+    h1 {
+        font-size: 10.4vw;
+        line-height: 11vw;
+    }
+    h2 {
+        font-size: 6.8vw;
+        line-height: 8vw;
+    }
+    h3 {
+        font-size: 2.8vw;
+        line-height: 3vw;
+    }
+    p {
+        font-family: sans-serif;
+        font-size: 1.2vw;
+        line-height: 1.8vw;
+    }
+    .list_bstd {
+        padding-right: 6.4vw;
+    }
+    .hide {
+        display: none;
+    } 
+    .imgPreview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 999;
+        pointer-events: none;
+    }
+}
+
+@media screen and (max-width:1019px) {
+    .top,
+    .banner,
+    .mission,
+    .list {
+        margin-bottom: 4vw;
+    }
+    h1 {
+        font-size: 10.2vw;
+        line-height: 10.6vw;
+    }
+    h2 {
+        font-size: 8vw;
+        line-height: 8.4vw;
+    }
+    h3 {
+        font-size: 2.8vw;
+        line-height: 2.4vw;
+    }
+    p {
+        font-family: sans-serif;
+        font-size: 1.8vw;
+        line-height: 1.8vw;
+    }
+    .list_bstd {
+        padding-right: 4.8vw;
+    }
+    .hide {
+        display: none;
+    } 
+    .imgPreview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 160px;
+        height: 160px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 999;
+        pointer-events: none;
+    }
+}
